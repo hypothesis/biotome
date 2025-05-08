@@ -1,0 +1,2922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <script type="application/json" class="js-hypothesis-config">
+    {
+      "enableExperimentalNewNoteButton": true,
+      "externalContainerSelector": "#hypothesis"
+    }
+  </script>
+  <style>
+    .sidebar-frame {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script async src="${HYPOTHESIS_EMBED_URL}"></script>
+    <script>
+      function openSidebar(sect) {
+        document.getElementById('csh_sidebar').classList.add('activec');
+
+        document.querySelectorAll('.tabcontent').forEach(element => {
+          element.classList.remove('display', 'active');
+        });
+        document.getElementById(`sect_${sect}`).classList.add('display', 'active');
+
+        document.querySelectorAll('.tablinks').forEach(element => {
+          element.classList.remove('display', 'activec');
+        });
+        document.getElementById(`button_${sect}`).classList.add('activec');
+      }
+
+      function closeSidebar() {
+        document.getElementById('csh_sidebar').classList.remove('activec');
+      }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Allosteric Regulation of Hexokinase II by Citrate Under Hypoxic Conditions in Human Cells | bioTome</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__DcKr3CumsZTU8f2X6BlpTbZkTl0a4ktIvtu7FpBmIVw__EcDdsp8eNwa9scAkRU0vjeqETS4kqcUO80lHfIXFcls__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__Sjm8qRC6pDZnJVeNrkx67-ZH1Mte_Ys5jCfEFFU1muc__r6-n363p7S972yCeOZaxDruAzBGzgr4Ie4Ci5dXnv0k__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <style type="text/css" media="all">
+      /* <![CDATA[ */
+      .panels-flexible-new .panels-flexible-region {
+        padding: 0;
+      }
+      .panels-flexible-new .panels-flexible-region-inside {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+      }
+      .panels-flexible-new .panels-flexible-region-inside-first {
+        padding-left: 0;
+      }
+      .panels-flexible-new .panels-flexible-region-inside-last {
+        padding-right: 0;
+      }
+      .panels-flexible-new .panels-flexible-column {
+        padding: 0;
+      }
+      .panels-flexible-new .panels-flexible-column-inside {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+      }
+      .panels-flexible-new .panels-flexible-column-inside-first {
+        padding-left: 0;
+      }
+      .panels-flexible-new .panels-flexible-column-inside-last {
+        padding-right: 0;
+      }
+      .panels-flexible-new .panels-flexible-row {
+        padding: 0 0 0.5em;
+        margin: 0;
+      }
+      .panels-flexible-new .panels-flexible-row-last {
+        padding-bottom: 0;
+      }
+      .panels-flexible-column-new-main {
+        float: left;
+        width: 99%;
+      }
+      .panels-flexible-new-inside {
+        padding-right: 0;
+      }
+      .panels-flexible-new {
+        width: auto;
+      }
+      .panels-flexible-region-new-center {
+        float: left;
+        width: 99%;
+      }
+      .panels-flexible-row-new-main-row-inside {
+        padding-right: 0;
+      }
+      /* ]]> */
+    </style>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__PWuQ_RYRTJ4BLEKsbWQeHysPg0gOQ3571ruQa_rXvAo__yLchFjMfV0VsvCb7lQCgu43P-Ik3VpuzyecNEs1b7Fs__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <style type="text/css" media="all">
+      /* <![CDATA[ */
+      #sliding-popup.sliding-popup-bottom,
+      #sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,
+      .eu-cookie-withdraw-tab {
+        background: gray;
+      }
+      #sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper {
+        background: transparent;
+      }
+      #sliding-popup .popup-content #popup-text h1,
+      #sliding-popup .popup-content #popup-text h2,
+      #sliding-popup .popup-content #popup-text h3,
+      #sliding-popup .popup-content #popup-text p,
+      .eu-cookie-compliance-secondary-button,
+      .eu-cookie-withdraw-tab {
+        color: #fff !important;
+      }
+      .eu-cookie-withdraw-tab {
+        border-color: #fff;
+      }
+      .eu-cookie-compliance-more-button {
+        color: #fff !important;
+      }
+      /* ]]> */
+    </style>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__Wnlyen9qEpwh_Qaf9okEu4QdVGM0BDothxeqA6Nbvo8__EJmw6SZD9bYoS8jocCpPYS3JFRURpdzmuvJoAUNiI-g__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__-fKTa26-KNFiP9Q6BTdw5rs9aHmQ9_MIEvtnTdbnhr8__igagZiGB2PktJMjUpZ2u3tnc56saoUGIrD5N0KSRmI4__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMpjy3ffuJrjjm9uW2i-Me1c23KLYuWHaqio__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css__wx45rVoqv9vt0kKXiqV_qvAdMrePptoc6dQrXp5g4fw__E0Tx0ykGwSvbSa_sKCrkD0RCA6q_OJfnjP8zcxUKd_I__QrrGUc7CpljPR5Aph-ukPbcwtK4AWrHGwCEXJ_k1V_c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/cshl_custom.css"
+      media="all"
+    />
+    <link rel="stylesheet" href="assets/font-awesome.min.css">
+  </head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-4436664 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results disqus-processed omega-mediaqueries-processed omega-equalheights-processed eu-cookie-compliance-processed responsive-layout-wide hw-responsive-layout-wide">
+    <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+        <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+          <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+            <div class="region-inner region-branding-inner">
+              <div class="branding-data clearfix">
+                <div class="logo-img">
+                  <a
+                    rel="home"
+                    class=""
+                    data-icon-position=""
+                    data-hide-link-title="0"
+                    style="font-weight:bold; color:#242021;"
+                    >
+                    <p style="font-size:72px; margin-bottom:0;">
+                      bio<span style="color:#be2635;">T</span>ome
+                    </p>
+                    <p style="font-size:12px;">
+                      THE <span style="color:#be2635;">FICTIONAL</span> PREPRINT SERVER FOR BIOLOGY
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid-11 suffix-1 region region-branding-second print-hidden"
+            id="region-branding-second"
+          >
+            <div class="region-inner region-branding-second-inner">
+              <div
+                class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title"
+                id="block-system-main-menu"
+              >
+                <div class="block-inner clearfix">
+                  <div class="content clearfix">
+                    <nav class="menubar-nav">
+                      <ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a>Home</a></li><li class="leaf" role="menuitem"><a>Submit</a></li><li class="leaf" role="menuitem"><a>FAQ</a></li><li class="leaf" id="cshl_news" role="menuitem"><a>Blog</a></li><li class="last leaf" role="menuitem"><a>ALERTS / RSS</a></li><li class="leaf" role="menuitem"><a>Resources</a></li><li class="leaf" role="menuitem"><a>About</a></li><li class="last leaf" role="menuitem" id="channels"><a>Channels</a></li></ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title"
+                id="block-panels-mini-biorxiv-search-box"
+              >
+                <div class="block-inner clearfix">
+                  <div class="content clearfix">
+                    <div
+                      class="panel-display panel-1col clearfix"
+                      id="mini-panel-biorxiv_search_box"
+                    >
+                      <div class="panel-panel panel-col">
+                        <div>
+                          <div
+                            class="panel-pane pane-highwire-seach-quicksearch"
+                          >
+                            <div class="pane-content">
+                              <form
+                                class="highwire-quicksearch button-style-mini button-style-mini"
+                                accept-charset="UTF-8"
+                                disabled
+                                onsubmit="return false;"
+                              >
+                                <div>
+                                  <div
+                                    class="form-item form-item-label-invisible form-type-textfield form-item-keywords"
+                                  >
+                                    <label
+                                      class="element-invisible"
+                                      for="search_rightsidebar_keywords_1089789369"
+                                      >Search for this keyword
+                                    </label>
+                                    <input
+                                      placeholder="Search"
+                                      type="text"
+                                      name="keywords"
+                                      value=""
+                                      size="60"
+                                      maxlength="128"
+                                      class="form-text"
+                                    />
+                                  </div>
+                                  <div class="button-wrapper button-mini">
+                                    <span class="icon-search"></span
+                                    ><input
+                                      data-icon-only="1"
+                                      data-font-icon="icon-search"
+                                      data-icon-position="after"
+                                      type="submit"
+                                      name="op"
+                                      value="Search"
+                                      class="form-submit"
+                                    />
+                                  </div>
+                                  <input
+                                    type="hidden"
+                                    name="form_build_id"
+                                    value="form-cmTncBRWwEWjiCzY1zUBfrpZXeOY6J1_iMeuoOSlknk"
+                                  />
+                                  <input
+                                    type="hidden"
+                                    name="form_id"
+                                    value="highwire_search_quicksearch_form_0"
+                                  />
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="panel-separator"></div>
+                          <div
+                            class="panel-pane pane-custom pane-2 advanced-search-link"
+                          >
+                            <div class="pane-content">
+                              <a>Advanced Search</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="zone-header"
+          class="zone zone-header clearfix container-30"
+        ></div>
+      </header>
+      <section id="section-content" class="section section-content">
+        <div id="zone-content" class="zone zone-content clearfix container-30">
+          <div
+            class="grid-28 suffix-1 prefix-1 region region-content"
+            id="region-content"
+          >
+            <div class="region-inner region-content-inner">
+              <a id="main-content"></a>
+              <div
+                class="block block-system block-main block-system-main odd block-without-title"
+                id="block-system-main"
+              >
+                <div class="block-inner clearfix">
+                  <div class="content clearfix">
+                    <div
+                      class="panel-display panels-960-layout jcore-2col-layout"
+                    >
+                      <div class="panel-row-wrapper clearfix">
+                        <div
+                          class="main-content-wrapper grid-17 suffix-1 alpha"
+                        >
+                          <div class="panel-panel panel-region-content">
+                            <div class="inside">
+                              <div
+                                class="panel-pane pane-highwire-article-citation"
+                              >
+                                <div class="pane-content">
+                                  <div
+                                    class="highwire-article-citation highwire-citation-type-highwire-article node4436664"
+                                    data-node-nid="4436664"
+                                    id="node-4436664--21409228277"
+                                    data-hw-author-tooltip-instance="highwire_author_tooltip"
+                                  >
+                                    <div
+                                      class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-top clearfix has-author-tooltip"
+                                    >
+                                      <span class="biorxiv-article-type">
+                                        New Results
+                                      </span>
+
+                                      <a id="follow-button"
+                                        ><i class="icon-bell-alt"></i> Follow
+                                        this preprint</a
+                                      >
+                                      <h1
+                                        class="highwire-cite-title"
+                                        id="page-title"
+                                      >
+                                        Allosteric Regulation of Hexokinase II by Citrate Under Hypoxic Conditions in Human Cells
+                                      </h1>
+                                      <div class="highwire-cite-authors">
+                                        <span class="highwire-citation-authors"
+                                          ><span
+                                            class="highwire-citation-author first hw-author-orcid-logo-wrapper has-tooltip hasTooltip"
+                                            data-delta="0"
+                                            data-hasqtip="0"
+                                            ><a
+                                              target="_blank"
+                                              class="hw-author-orcid-logo link-icon-only link-icon"
+                                              ><span
+                                                class="hw-icon-orcid hw-icon-color-orcid"
+                                              ></span>
+                                              <span
+                                                class="title element-invisible"
+                                                >View ORCID Profile</span
+                                              ></a
+                                            ><span class="nlm-given-names"
+                                              >Elena K.</span
+                                            >
+                                            <span class="nlm-surname"
+                                              >Vassilev</span
+                                            ></span
+                                          >,
+                                          <span
+                                            class="highwire-citation-author hw-author-orcid-logo-wrapper"
+                                            data-delta="1"
+                                            ><a
+                                              target="_blank"
+                                              class="hw-author-orcid-logo link-icon-only link-icon"
+                                              ><span
+                                                class="hw-icon-orcid hw-icon-color-orcid"
+                                              ></span>
+                                              <span
+                                                class="title element-invisible"
+                                                >View ORCID Profile</span
+                                              ></a
+                                            ><span class="nlm-given-names"
+                                              >Marcus J.</span
+                                            >
+                                            <span class="nlm-surname"
+                                              >Renfield</span
+                                            ></span
+                                          >,
+                                          <span
+                                            class="highwire-citation-author hw-author-orcid-logo-wrapper"
+                                            data-delta="2"
+                                            ><a
+                                              target="_blank"
+                                              class="hw-author-orcid-logo link-icon-only link-icon"
+                                              ><span
+                                                class="hw-icon-orcid hw-icon-color-orcid"
+                                              ></span>
+                                              <span
+                                                class="title element-invisible"
+                                                >View ORCID Profile</span
+                                              ></a
+                                            ><span class="nlm-given-names"
+                                              >Aisha T.</span
+                                            >
+                                            <span class="nlm-surname"
+                                              >Nakamura</span
+                                            ></span
+                                          >
+                                      </div>
+
+                                      <div class="highwire-cite-metadata">
+                                        <span
+                                          class="highwire-cite-metadata-doi highwire-cite-metadata"
+                                          ><span class="label">doi:</span>
+                                          https://doi.org/11.1111/2025.05.07.111111
+                                        </span>
+                                        <div
+                                          class="pub_jnl"
+                                          style="
+                                            padding-top: 8px;
+                                            font-size: 10pt;
+                                            line-height: 1.3em;
+                                            color: grey;
+                                          "
+                                        >
+                                          This article is a preprint and has not
+                                          been certified by peer review [<a
+                                            target="_blank"
+                                            style="color: black"
+                                            >what does this mean?</a
+                                          >].
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div
+                                class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs"
+                              >
+                                <div class="pane-content">
+                                  <div class="item-list">
+                                    <ul class="tabs inline panels-ajax-tab">
+                                      <li class="first active">
+                                        <a
+                                          class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-processed panels-ajax-tabs-first-loaded hw-panels-ajax-tabs-once-processed"
+                                          data-panel-name="biorxiv_tab_art"
+                                          data-target-id="highwire_article_tabs"
+                                          data-entity-context="node:4436664"
+                                          data-trigger=""
+                                          data-url-enabled="1"
+                                          style="cursor: pointer"
+                                          >Abstract</a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-processed hw-panels-ajax-tabs-once-processed"
+                                          data-panel-name="article_tab_full_text"
+                                          data-target-id="highwire_article_tabs"
+                                          data-entity-context="node:4436664"
+                                          data-trigger="full-text"
+                                          data-url-enabled="1"
+                                          style="cursor: pointer"
+                                          >Full Text</a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-processed hw-panels-ajax-tabs-once-processed"
+                                          data-panel-name="biorxiv_tab_info"
+                                          data-target-id="highwire_article_tabs"
+                                          data-entity-context="node:4436664"
+                                          data-trigger="article-info"
+                                          data-url-enabled="1"
+                                          style="cursor: pointer"
+                                          >Info/History</a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-processed hw-panels-ajax-tabs-once-processed"
+                                          data-panel-name="article_tab_metrics"
+                                          data-target-id="highwire_article_tabs"
+                                          data-entity-context="node:4436664"
+                                          data-trigger="article-metrics"
+                                          data-url-enabled="1"
+                                          style="cursor: pointer"
+                                          >Metrics</a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-processed hw-panels-ajax-tabs-once-processed"
+                                          data-panel-name="biorxiv_tab_data"
+                                          data-target-id="highwire_article_tabs"
+                                          data-entity-context="node:4436664"
+                                          data-trigger="supplementary-material"
+                                          data-url-enabled="1"
+                                          style="cursor: pointer"
+                                          >Supplementary material</a>
+                                      </li>
+                                      <li class="last">
+                                        <a
+                                          class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-processed hw-panels-ajax-tabs-once-processed"
+                                          data-panel-name="biorxiv_tab_pdf"
+                                          data-target-id="highwire_article_tabs"
+                                          data-entity-context="node:4436664"
+                                          data-trigger="full.pdf+html"
+                                          data-url-enabled="1"
+                                          style="cursor: pointer"
+                                          ><i class="icon-file-alt"></i> Preview
+                                          PDF</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div
+                                class="panel-pane pane-highwire-panel-tabs-container"
+                              >
+                                <div class="pane-content">
+                                  <div
+                                    data-panels-ajax-tab-preloaded="biorxiv_tab_art"
+                                    id="panels-ajax-tab-container-highwire_article_tabs"
+                                    class="panels-ajax-tab-container"
+                                  >
+                                    <div
+                                      class="panels-ajax-tab-wrap-biorxiv_tab_art"
+                                    >
+                                      <div
+                                        class="panel-display panel-1col clearfix"
+                                      >
+                                        <div class="panel-panel panel-col">
+                                          <div>
+                                            <div
+                                              class="panel-pane pane-highwire-markup"
+                                            >
+                                              <div class="pane-content">
+                                                <div class="highwire-markup">
+                                                  <div
+                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                    data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip"
+                                                    class="content-block-markup"
+                                                    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                                                  >
+                                                    <div
+                                                      class="article abstract-view"
+                                                    >
+                                                      <span
+                                                        class="highwire-journal-article-marker-start"
+                                                      ></span>
+                                                      <div
+                                                        class="section abstract"
+                                                        id="abstract-1"
+                                                      >
+                                                        <h2 class="">
+                                                          Abstract
+                                                        </h2>
+                                                        <p id="p-3">
+                                                          Hexokinase II (HKII)
+                                                          plays a central role
+                                                          in glycolysis by
+                                                          catalyzing the
+                                                          phosphorylation of
+                                                          glucose to
+                                                          glucose-6-phosphate,
+                                                          a key regulatory step
+                                                          in cellular
+                                                          metabolism. While
+                                                          HKII activity is
+                                                          known to be modulated
+                                                          by various metabolic
+                                                           cues, its regulation
+                                                           under hypoxic
+                                                           conditions remains
+                                                           incompletely
+                                                           understood. Here, we
+                                                           report that citrate,
+                                                           a tricarboxylic acid
+                                                           (TCA) cycle
+                                                           intermediate, acts
+                                                           as an allosteric
+                                                           inhibitor of HKII in
+                                                           human epithelial
+                                                           cells subjected to
+                                                           hypoxia. Using a
+                                                           combination of in
+                                                           vitro enzyme
+                                                           kinetics, metabolite
+                                                           profiling, and
+                                                           site-directed
+                                                           mutagenesis, we
+                                                           demonstrate that
+                                                           citrate binds to a
+                                                           previously
+                                                           uncharacterized
+                                                           regulatory pocket on
+                                                           HKII, distinct from
+                                                           the active site.
+                                                           Binding affinity was
+                                                           enhanced under
+                                                           low-oxygen
+                                                           conditions,
+                                                           correlating with a
+                                                           significant decrease
+                                                           in HKII catalytic
+                                                           efficiency.
+                                                           Structural modeling
+                                                           and thermal shift
+                                                           assays further
+                                                           support a
+                                                           citrate-induced
+                                                           conformational
+                                                           change that reduces
+                                                           substrate
+                                                           accessibility.
+                                                           Notably,
+                                                           CRISPR-mediated
+                                                           disruption of the
+                                                           citrate-binding site
+                                                           attenuated the
+                                                           hypoxia-induced
+                                                           suppression of
+                                                           glycolytic flux,
+                                                           suggesting a
+                                                           physiological role
+                                                           for this regulatory
+                                                           mechanism. These
+                                                           findings reveal a
+                                                           novel layer of
+                                                           metabolic control in
+                                                           hypoxic adaptation
+                                                           and suggest that
+                                                           citrate-mediated
+                                                           inhibition of HKII
+                                                           may serve as a
+                                                           feedback mechanism
+                                                           to balance
+                                                           glycolytic and
+                                                           mitochondrial
+                                                           metabolism under
+                                                           stress conditions.
+                                                        </p>
+                                                      </div>
+                                                      <h3>
+                                                        Competing Interest
+                                                        Statement
+                                                      </h3>
+                                                      <p id="p-4">
+                                                        The authors have
+                                                        declared no competing
+                                                        interest.
+                                                      </p>
+                                                      <span
+                                                        class="highwire-journal-article-marker-end"
+                                                      ></span>
+                                                    </div>
+                                                    <span
+                                                      class="related-urls"
+                                                    ></span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="panel-separator"></div>
+                                            <div
+                                              class="panel-pane pane-biorxiv-copyright"
+                                            >
+                                              <div class="pane-content">
+                                                <div
+                                                  class="field field-name-field-highwire-copyright field-type-text field-label-inline clearfix"
+                                                >
+                                                  <div class="field-label">
+                                                    Copyright&nbsp;
+                                                  </div>
+                                                  <div class="field-items">
+                                                    <div
+                                                      class="field-item even"
+                                                    >
+                                                      The copyright holder for
+                                                      this preprint is the
+                                                      author/funder, who has
+                                                      granted bioTome a license
+                                                      to display the preprint in
+                                                      perpetuity.<span
+                                                        class="license-type-none"
+                                                      >
+                                                        All rights reserved. No
+                                                        reuse allowed without
+                                                        permission.</span
+                                                      >
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div class="panel-pane pane-disqus-comment">
+                                <div class="pane-content"></div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div
+                                class="panel-pane pane-panels-mini pane-biorxiv-subject-areas-table block-style-home"
+                                style="background-color: white"
+                              >
+                                <div class="pane-content">
+                                  <div
+                                    class="panel-display panel-1col clearfix"
+                                    id="mini-panel-biorxiv_subject_areas_table"
+                                  >
+                                    <div class="panel-panel panel-col">
+                                      <div
+                                        id="czilogo"
+                                        class="panel-pane pane-czi-link"
+                                        style="width: 100%; text-align: left"
+                                      >
+                                        <span style="font-size: 115%"
+                                          >bioTome and medTome thank the
+                                          following for their generous financial
+                                          support:</span
+                                        >
+                                        <blockquote class="cshl_thanks">
+                                          The Halcyon Biomedical Trust, North
+                                          Shore Harbor Institute, The Arjun
+                                          Mehta Science Foundation, Pacific
+                                          Institute of Technology, Institut
+                                          National des Sciences Biologiques,
+                                          Evergreen Oncology Center, Royal
+                                          Institute of Molecular Medicine, New
+                                          Albion Institute of Technology,
+                                          Summit University, The University of
+                                          Dunbridge, Rainier Institute for
+                                          Genomic Research, and Vrijstaat
+                                          Universiteit Nordam.
+                                        </blockquote>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-pane pane-highwire-back-to-top">
+                                <div class="pane-content">
+                                  <a
+                                    class="back-to-top"
+                                    data-icon-position=""
+                                    data-hide-link-title="0"
+                                    ><span class="icon-chevron-up"></span> Back
+                                    to top</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="sidebar-right-wrapper grid-10 omega">
+                          <div class="panel-panel panel-region-sidebar-right">
+                            <div class="inside">
+                              <div class="panel-pane pane-highwire-node-pager">
+                                <div class="pane-content">
+                                  <div
+                                    class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"
+                                  >
+                                    <span class="pager-prev"
+                                      ><a
+                                        rel="prev"
+                                        class="pager-link-prev link-icon"
+                                        ><span
+                                          class="icon-circle-arrow-left"
+                                        ></span>
+                                        <span class="title">Previous</span></a
+                                      ></span
+                                    ><span class="pager-next"
+                                      ><a
+                                        rel="next"
+                                        class="pager-link-next link-icon-right link-icon"
+                                        ><span class="title">Next</span>
+                                        <span
+                                          class="icon-circle-arrow-right"
+                                        ></span></a
+                                    ></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div class="panel-pane pane-custom pane-1">
+                                <div class="pane-content">
+                                  Posted&nbsp;March 7, 2025.
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div
+                                class="panel-pane pane-panels-mini pane-biorxiv-art-tools"
+                              >
+                                <div class="pane-content">
+                                  <div
+                                    id="mini-panel-biorxiv_art_tools"
+                                    class="highwire-2col-stacked panel-display"
+                                  >
+                                    <div class="panel-row-wrapper clearfix">
+                                      <div
+                                        class="content-left-wrapper content-column"
+                                      >
+                                        <div
+                                          class="panel-panel panel-region-content-left"
+                                        >
+                                          <div class="inside">
+                                            <div
+                                              class="panel-pane pane-highwire-variant-link"
+                                            >
+                                              <div class="pane-content">
+                                                <a
+                                                  target="_self"
+                                                  class="article-dl-pdf-link link-icon"
+                                                  ><span
+                                                    class="icon-external-link-sign"
+                                                  ></span>
+                                                  <span class="title"
+                                                    >Download PDF</span
+                                                  ></a
+                                                >
+                                              </div>
+                                            </div>
+                                            <div
+                                              class="panel-pane pane-full-text-print"
+                                            >
+                                              <div
+                                                class="pane-content dropdown-container"
+                                              >
+                                                <a class="print-save-options"
+                                                  ><i class="icon-collapse"></i
+                                                  >Print/Save Options</a
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="panel-separator"></div>
+                                            <div
+                                              class="panel-pane pane-biorxiv-supplementary-fragment"
+                                            >
+                                              <div class="pane-content">
+                                                <p>
+                                                  <a
+                                                    ><i class="icon-file"></i
+                                                    >Supplementary Material
+                                                  </a>
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="content-right-wrapper content-column"
+                                      >
+                                        <div
+                                          class="panel-panel panel-region-content-right"
+                                        >
+                                          <div class="inside">
+                                            <div
+                                              class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email"
+                                            >
+                                              <div class="pane-content">
+                                                <div
+                                                  class="minipanel-dialog-wrapper"
+                                                >
+                                                  <div
+                                                    class="minipanel-dialog-link-link"
+                                                  >
+                                                    <a
+                                                      class="minipanel-dialog-link-trigger minipanel-dialog-link-trigger-processed"
+                                                      title="Email this Article"
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      ><i
+                                                        class="icon-envelope"
+                                                      ></i>
+                                                      Email</a
+                                                    >
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="panel-separator"></div>
+                                            <div
+                                              class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax"
+                                              id="shareit"
+                                            >
+                                              <div class="pane-content">
+                                                <a
+                                                  class="link-icon"
+                                                  ><span
+                                                    class="icon-share-alt"
+                                                  ></span>
+                                                  <span class="title"
+                                                    >Share</span
+                                                  ></a
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="panel-separator"></div>
+                                            <div
+                                              class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit"
+                                            >
+                                              <div class="pane-content">
+                                                <div
+                                                  class="panel-display omega-12-onecol"
+                                                  id="mini-panel-biorxiv_share"
+                                                >
+                                                  <div
+                                                    class="panel-panel grid-12 panel-region-preface"
+                                                  >
+                                                    <div class="inside">
+                                                      <div
+                                                        class="panel-pane pane-highwire-article-citation"
+                                                      >
+                                                        <div
+                                                          class="pane-content"
+                                                        >
+                                                          <div
+                                                            class="highwire-article-citation highwire-citation-type-highwire-article node4436664--3"
+                                                          >
+                                                            <div
+                                                              class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix"
+                                                            >
+                                                              <div
+                                                                class="highwire-cite-title"
+                                                              >
+                                                                <div
+                                                                  class="highwire-cite-title"
+                                                                >
+                                                                  Allosteric Regulation of Hexokinase II by Citrate Under Hypoxic Conditions in Human Cells
+                                                                </div>
+                                                              </div>
+
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div
+                                                    class="panel-panel grid-12 panel-region-content"
+                                                  >
+                                                    <div class="inside">
+                                                      <div
+                                                        class="panel-pane pane-highwire-article-clipboard-copy"
+                                                      >
+                                                        <div
+                                                          class="pane-content"
+                                                        >
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div
+                                                    class="panel-panel grid-12 panel-region-postscript"
+                                                  >
+                                                    <div class="inside">
+                                                      <div
+                                                        class="panel-pane pane-service-links text-center"
+                                                      >
+                                                        <div
+                                                          class="pane-content"
+                                                        >
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="panel-separator"></div>
+                                            <div
+                                              class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool"
+                                            >
+                                              <div class="pane-content">
+                                                <div
+                                                  class="minipanel-dialog-wrapper"
+                                                >
+                                                  <div
+                                                    class="minipanel-dialog-link-link"
+                                                  >
+                                                    <a
+                                                      oncontextmenu="javascript: return false;"
+                                                      class="minipanel-dialog-link-trigger link-icon minipanel-dialog-link-trigger-processed"
+                                                      title="Citation Tools"
+                                                      ><span
+                                                        class="icon-globe"
+                                                      ></span>
+                                                      <span class="title"
+                                                        >Citation Tools</span
+                                                      ></a
+                                                    >
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div
+                                              class="panel-pane"
+                                              id="pane-qr-link1"
+                                            >
+                                              <div class="pane-content">
+                                                <div
+                                                  class="minipanel-dialog-wrapper"
+                                                >
+                                                  <div
+                                                    class="minipanel-dialog-link-link"
+                                                  >
+                                                    <a
+                                                      target="_blank"
+                                                      class="link-icon"
+                                                      ><span
+                                                        class="icon-qrcode"
+                                                      ></span>
+                                                      <span class="title"
+                                                        >Get QR code</span
+                                                      ></a
+                                                    >
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- /.panel-row-wrapper -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div class="panel-pane pane-service-links">
+                                <div class="pane-content">
+                                  <div class="service-links">
+                                    <div class="item-list">
+                                      <ul>
+                                        <li class="first">
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li class="last">
+                                          <div
+                                            id="___plusone_0"
+                                            style="
+                                              position: absolute;
+                                              width: 450px;
+                                              left: -10000px;
+                                            "
+                                          >
+                                          </div>
+                                          <g:plusone
+                                            width="300"
+                                            data-gapiscan="true"
+                                            data-gapistub="true"
+                                          ></g:plusone>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div
+                                class="panel-pane pane-highwire-article-collections"
+                              >
+                                <h2 class="pane-title">Subject Area</h2>
+
+                                <div class="pane-content">
+                                  <div
+                                    class="highwire-list-wrapper highwire-article-collections"
+                                  >
+                                    <div class="highwire-list">
+                                      <ul
+                                        class="highwire-article-collection-term-list"
+                                      >
+                                        <li class="first last odd">
+                                          <span
+                                            class="highwire-article-collection-term"
+                                            ><a
+                                              class="highlight"
+                                              data-icon-position=""
+                                              data-hide-link-title="0"
+                                              >Microbiology<i
+                                                class="icon-caret-right"
+                                              ></i> </a
+                                          ></span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-separator"></div>
+                              <div
+                                class="panel-separator"
+                                style="margin-top: 40px"
+                              ></div>
+                              <div
+                                class="launcher-container"
+                                style="margin-bottom: 40px"
+                              >
+                                <div class="launcher-inner">
+                                  <div class="main2">
+                                    <div
+                                      class="hdr2"
+                                      style="border-radius: 10px 10px 0px 0px"
+                                    >
+                                      <p>Reviews and Context</p>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="panel-separator"
+                                    style="margin-top: 12px"
+                                  ></div>
+                                  <div
+                                    class="main"
+                                    id="dashboard-launcher-comments"
+                                    style="cursor: pointer"
+                                    onclick="openSidebar('comments')"
+                                  >
+                                    <div
+                                      id="dashboard-launcher-badge-comments"
+                                      class="leader2"
+                                      style="background: #0066ff"
+                                    >
+                                      <p id="dashboard-launcher-count-comments">
+                                        0
+                                      </p>
+                                    </div>
+                                    <div class="pointer2">
+                                      <div class="left-side">
+                                        <p style="color: black">Comment</p>
+                                      </div>
+                                      <div class="right-side">
+                                        <i
+                                          class="icon-comment-alt"
+                                          style="color: #0066ff"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="main"
+                                    id="dashboard-launcher-trip-reviews"
+                                    style="cursor: pointer"
+                                    onclick="openSidebar('trip')"
+                                  >
+                                    <div
+                                      id="dashboard-launcher-badge-trip-reviews"
+                                      class="leader2"
+                                      style="background: rgb(102, 102, 102)"
+                                    >
+                                      <p
+                                        id="dashboard-launcher-count-trip-reviews"
+                                      >
+                                        0
+                                      </p>
+                                    </div>
+                                    <div class="pointer2">
+                                      <div class="left-side">
+                                        <p>TRIP Peer Reviews</p>
+                                      </div>
+                                      <div class="right-side">
+                                        <i
+                                          class="icon-check"
+                                          style="color: green"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="main"
+                                    id="dashboard-launcher-community-reviews"
+                                    style="cursor: pointer"
+                                    onclick="openSidebar('community_reviews')"
+                                  >
+                                    <div
+                                      id="dashboard-launcher-badge-community-reviews"
+                                      class="leader2"
+                                      style="background: brown"
+                                    >
+                                      <p
+                                        id="dashboard-launcher-count-community-reviews"
+                                      >
+                                        1
+                                      </p>
+                                    </div>
+                                    <div class="pointer2">
+                                      <div class="left-side">
+                                        <p style="color: black">
+                                          Community Reviews
+                                        </p>
+                                      </div>
+                                      <div class="right-side">
+                                        <i
+                                          class="icon-group"
+                                          style="color: brown"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="main"
+                                    id="dashboard-launcher-automated-services"
+                                    style="cursor: pointer"
+                                    onclick="openSidebar('auto_reviews')"
+                                  >
+                                    <div
+                                      id="dashboard-launcher-badge-automated-services"
+                                      class="leader2"
+                                      style="background: red"
+                                    >
+                                      <p
+                                        id="dashboard-launcher-count-automated-services"
+                                      >
+                                        1
+                                      </p>
+                                    </div>
+                                    <div class="pointer2">
+                                      <div class="left-side">
+                                        <p style="color: black">
+                                          Automated Services
+                                        </p>
+                                      </div>
+                                      <div class="right-side">
+                                        <i
+                                          class="icon-cogs"
+                                          style="color: red"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="main"
+                                    id="dashboard-launcher-blogs-media"
+                                    style="cursor: pointer"
+                                    onclick="openSidebar('blog_links')"
+                                  >
+                                    <div
+                                      id="dashboard-launcher-badge-blogs-media"
+                                      class="leader2"
+                                      style="background: rgb(102, 102, 102)"
+                                    >
+                                      <p
+                                        id="dashboard-launcher-count-blogs-media"
+                                      >
+                                        0
+                                      </p>
+                                    </div>
+                                    <div class="pointer2">
+                                      <div class="left-side">
+                                        <p style="color: black">Blogs/Media</p>
+                                      </div>
+                                      <div class="right-side">
+                                        <i
+                                          class="icon-desktop"
+                                          style="color: darkviolet"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="main"
+                                    id="dashboard-launcher-author-videos"
+                                    style="margin-bottom: 22px; cursor: pointer"
+                                    onclick="openSidebar('videos')"
+                                  >
+                                    <div
+                                      id="dashboard-launcher-badge-author-videos"
+                                      class="leader2"
+                                      style="background: #666666"
+                                    >
+                                      <p
+                                        id="dashboard-launcher-count-author-videos"
+                                      >
+                                        0
+                                      </p>
+                                    </div>
+                                    <div class="pointer2">
+                                      <div class="left-side">
+                                        <p>Author Videos</p>
+                                      </div>
+                                      <div class="right-side">
+                                        <i
+                                          class="icon-film"
+                                          style="color: navy"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="panel-separator"
+                                style="margin-top: 40px; clear: both"
+                              ></div>
+                              <div
+                                class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2"
+                              >
+                                <div class="pane-content">
+                                  <div
+                                    class="panel-flexible panels-flexible-new clearfix"
+                                    id="mini-panel-biorxiv_subject_collections"
+                                  >
+                                    <div
+                                      class="panel-flexible-inside panels-flexible-new-inside"
+                                    >
+                                      <div
+                                        class="panels-flexible-region panels-flexible-region-new-center panels-flexible-region-first panels-flexible-region-last"
+                                      >
+                                        <div
+                                          class="inside panels-flexible-region-inside panels-flexible-region-new-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last"
+                                        >
+                                          <div class="panel-pane pane-snippet">
+                                            <div class="pane-content">
+                                              <div
+                                                class="snippet biorxiv-subject-areas-table-title"
+                                                id="biorxiv-subject-areas-table-title"
+                                              >
+                                                <div class="snippet-content">
+                                                  <b>Subject Areas</b>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel-separator"></div>
+                                          <div class="panel-pane pane-snippet">
+                                            <div class="pane-content">
+                                              <div
+                                                class="snippet biorxiv-subject-areas-view-papers"
+                                                id="biorxiv-subject-areas-view-papers"
+                                              >
+                                                <div class="snippet-content">
+                                                  <a
+                                                    ><strong
+                                                      >All Articles</strong
+                                                    ></a
+                                                  >
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel-separator"></div>
+                                          <div
+                                            class="panel-pane pane-highwire-subject-collections"
+                                          >
+                                            <div class="pane-content">
+                                              <ul
+                                                id="collection"
+                                                class="collection highwire-list-expand"
+                                              >
+                                                <li
+                                                  class="outer collection depth-2 child first"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Animal Behavior and
+                                                      Cognition</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(6352)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    Biochemistry
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Biochemistry</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(14516)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Bioengineering</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(11111)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Bioinformatics</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(34981)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Biophysics</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(18021)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Cancer Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(15128)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Cell Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(21239)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Clinical Trials*</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(138)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Developmental Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(11402)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Ecology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(16781)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Epidemiology*</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(2067)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Evolutionary Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(21147)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Genetics</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(13871)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Genomics</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(19405)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Immunology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(14558)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Microbiology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(33924)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Molecular Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(14146)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Neuroscience</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(73857)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Paleontology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(558)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Pathology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(2325)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Pharmacology and
+                                                      Toxicology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(3943)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Physiology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(6249)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Plant Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(12669)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Scientific Communication
+                                                      and Education</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(1860)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Synthetic Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(3555)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Systems Biology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(8521)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                                <li
+                                                  class="outer collection depth-2 child last"
+                                                >
+                                                  <div class="data-wrapper">
+                                                    <a
+                                                      class=""
+                                                      data-icon-position=""
+                                                      data-hide-link-title="0"
+                                                      >Zoology</a
+                                                    >
+                                                    <span
+                                                      class="article-count"
+                                                      style="display: none"
+                                                      >(1948)</span
+                                                    >
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <div
+                                            id="cshl-sunset"
+                                            style="
+                                              margin-top: 25px;
+                                              margin-bottom: 28px;
+                                              margin-right: 18px;
+                                              font-size: 80%;
+                                              color: grey;
+                                            "
+                                          >
+                                            * The Clinical Trials and
+                                            Epidemiology subject categories are
+                                            now closed to new submissions
+                                            following the completion of
+                                            bioTome's clinical research pilot
+                                            project and launch of the dedicated
+                                            health sciences server medTome
+                                            <a
+                                              >(submit.medtome.org)</a
+                                            >. New papers that report results of
+                                            Clinical Trials must now be
+                                            submitted to medTome. Most new
+                                            Epidemiology papers also should be
+                                            submitted to medTome, but if a paper
+                                            contains no health-related
+                                            information, authors may choose to
+                                            submit it to another bioTome subject
+                                            category (e.g., Genetics or
+                                            Microbiology).
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="region region-page-bottom" id="region-page-bottom">
+      <div class="region-inner region-page-bottom-inner"></div>
+      <aside id="csh_sidebar" class="csh_panelc">
+        <div class="csh_panelc-header clearfix">
+          <p style="font-size: 1.3rem; font-weight: 600; line-height: 1.9rem">
+            Reviews and Context &nbsp;
+            <span class="csh_panelc-close csh_panelc-toggle" onclick="closeSidebar()">x</span>
+          </p>
+          <div class="tab" id="tab-bar">
+            <button
+              id="button_comments"
+              class="tablinks csh-panelc-button-comment icon min-width"
+              onclick="openSidebar('comments')"
+            >
+              <span>Comments</span><i class="icon-comment-alt"></i>
+              <span
+                style="font-size: 85%; font-weight: bold"
+                id="button_comments_count"
+                ><sup>0</sup></span
+              ></button
+            ><button
+              id="button_trip"
+              class="tablinks csh-panelc-button-trip nocontent icon min-width"
+              onclick="openSidebar('trip')"
+            >
+              <span>TRiP</span><i class="icon-check"></i>
+              <span style="font-size: 85%; font-weight: bold"
+                ><sup>0</sup></span
+              ></button
+            ><button
+              id="button_community_reviews"
+              class="tablinks csh-panelc-button-community icon min-width"
+              onclick="openSidebar('community_reviews')"
+            >
+              <span>Community</span><i class="icon-group"></i>
+              <span style="font-size: 85%; font-weight: bold"
+                ><sup>1</sup></span
+              ></button
+            ><button
+              id="button_auto_reviews"
+              class="tablinks csh-panelc-button-automated icon min-width"
+              onclick="openSidebar('auto_reviews')"
+            >
+              <span>Automated</span><i class="icon-cogs"></i>
+              <span style="font-size: 85%; font-weight: bold"
+                ><sup>1</sup></span
+              ></button
+            ><button
+              id="button_blog_links"
+              class="tablinks csh-panelc-button-blog nocontent icon min-width"
+              onclick="openSidebar('blog_links')"
+            >
+              <span>Blogs/Media</span><i class="icon-desktop"></i>
+              <span style="font-size: 85%; font-weight: bold"
+                ><sup>0</sup></span
+              ></button
+            ><button
+              id="button_videos"
+              class="tablinks csh-panelc-button-video nocontent icon min-width"
+              onclick="openSidebar('videos')"
+            >
+              <span>Video</span><i class="icon-film"></i>
+              <span style="font-size: 85%; font-weight: bold"
+                ><sup>0</sup></span
+              >
+            </button>
+            <div class="clearfix separator"></div>
+          </div>
+        </div>
+        <div class="csh_panelc-body" style="height: 100%;">
+          <div class="tabcontent" id="sect_comments" style="height:100%;">
+            <div class="tab-header" id="sect_comments_header">
+              <p class="tab-title"><i class="icon-comment-alt"></i> Comments</p>
+              <p class="tab-description">
+                bioTome aims to provide a venue for anyone to comment on a
+                bioTome preprint. Comments are moderated for offensive or
+                irrelevant content (this can take ~24 h). Please avoid duplicate
+                submissions and read our
+                <a
+                  target="_blank"
+                  >Comment Policy</a
+                >
+                before commenting. The content of a comment is not endorsed by
+                bioTome.
+              </p>
+            </div>
+            <div class="comments-tab-share">
+              <a class="comments-tab-share-link"
+                ><i class="icon-share-alt"></i>Share this comments tab (click to
+                copy link)</a
+              ><span class="comments-tab-share-message">Copied!</span>
+            </div>
+            <div id="hypothesis" style="height:100%;">
+            </div>
+          </div>
+          <div class="tabcontent nocontent" id="sect_trip">
+            <div class="tab-header">
+              <p class="tab-title"><i class="icon-check"></i> TRiP</p>
+              <p class="tab-description">
+                bioTome partners with journals and review services to enable
+                posting of peer reviews and editorial decisions related to
+                preprints they are evaluating. Reviews are posted with the
+                consent of the authors.
+              </p>
+            </div>
+            <div id="panel_trip_hdr" class="csh_panel_hdr">
+              TRiP reviews are part of a peer review pilot project in which
+              participating organizations post peer reviews of manuscripts they
+              are evaluating
+            </div>
+            <div class="csh_panel_hdr_sub">
+              <i>There is no TRiP material for this paper.</i>
+            </div>
+          </div>
+          <div class="tabcontent" id="sect_community_reviews">
+            <div class="tab-header">
+              <p class="tab-title">
+                <i class="icon-group"></i> Community Reviews
+              </p>
+              <p class="tab-description">
+                bioTome aims to inform readers about online discussion of this
+                preprint occurring elsewhere. The content at the links below is
+                not endorsed by either bioTome or the preprint's authors.
+              </p>
+            </div>
+            <div
+              id="panel_community_reviews_hdr"
+              class="csh_panel_hdr"
+              style="margin-bottom: 40px"
+            >
+              Community reviews of this article:
+            </div>
+            <div class="new-grid">
+            </div>
+          </div>
+          <div class="tabcontent" id="sect_auto_reviews">
+            <div class="tab-header">
+              <p class="tab-title">
+                <i class="icon-cogs"></i> Automated Services
+              </p>
+              <p class="tab-description">
+                A variety of services now perform automated analyses of papers.
+                Outputs from automated tools that summarize and extract
+                information from bioTome preprints using AI and other
+                technologies are displayed below. Note these tools can generate
+                errors and the information has not been verified by bioTome or
+                the authors.
+              </p>
+            </div>
+            <div class="panel_blog_links cshl-hmarkdown-view">
+              <h3 style="margin-bottom: 2px; font-size: 1.08rem">
+                Key Resources Table from
+                <a
+                  target="_blank"
+                  style="color: #333333"
+                  >SciScore</a
+                >
+              </h3>
+            </div>
+            <div id="sciscore-container" typeof="rdf:Resource">
+              <div class="tables-heading">
+                <h3 style="margin-bottom: 16px; font-size: 1.08rem">
+                  <div class="tables-heading-download">
+                    <a
+                      ><i class="icon-download-alt"></i> JSON</a
+                    >|<a
+                      ><i class="icon-download-alt"></i> CSV</a
+                    >|<a
+                      ><i class="icon-download-alt"></i> XML</a
+                    >
+                  </div>
+                </h3>
+              </div>
+              <div class="accordion" typeof="rdfs:Class">
+                <div class="accordion-intro">
+                  <i
+                    class="icon-caret-right icon-large arrow"
+                    style="margin-left: 5px"
+                  ></i>
+                  <div class="accordion-intro-div">
+                    <h4 property="rdfs:label">
+                      Experimental Models: Cell Lines
+                    </h4>
+                    <h5>1 record</h5>
+                  </div>
+                </div>
+                <div class="accordion-content" style="">
+                  <div class="table-container">
+                    <table typeof="rdfs:Resource">
+                      <tbody>
+                        <tr class="active">
+                          <th style="background-color: white">
+                            REAGENT or RESOURCE
+                          </th>
+                          <th style="background-color: white">SOURCE</th>
+                          <th style="background-color: white">IDENTIFIER</th>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>HC1</span></div>
+                          </td>
+                          <td>
+                            <div><span>Cellosaurus</span></div>
+                          </td>
+                          <td>
+                            <div>
+                              <a
+                                target="_blank"
+                                style="color: #0c8ce9; font-weight: 600"
+                                >RRID:CVCL_C6W1</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="show-more" style="display: none">
+                      <a
+                        class="load_more"
+                        >Show more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" typeof="rdfs:Class">
+                <div class="accordion-intro">
+                  <i
+                    class="icon-caret-right icon-large arrow"
+                    style="margin-left: 5px"
+                  ></i>
+                  <div class="accordion-intro-div">
+                    <h4 property="rdfs:label">Software and Algorithms</h4>
+                    <h5>9 records</h5>
+                  </div>
+                </div>
+                <div class="accordion-content" style="">
+                  <div class="table-container">
+                    <table typeof="rdfs:Resource">
+                      <tbody>
+                        <tr class="active">
+                          <th style="background-color: white">
+                            REAGENT or RESOURCE
+                          </th>
+                          <th style="background-color: white">SOURCE</th>
+                          <th style="background-color: white">IDENTIFIER</th>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>IMOD</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                            <div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>Trimmomatic</span></div>
+                          </td>
+                          <td>
+                            <div>
+                            </div>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>NextClip</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>SPAdes</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>BLASTP</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>python-bx</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>GTDB-Tk</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>Prokka</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                        <tr typeof="rdfs:Resource" class="active">
+                          <td property="rdfs:label">
+                            <div><span>MAFFT</span></div>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="show-more" style="display: none">
+                      <a
+                        class="load_more"
+                        >Show more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="margin-top: 30px; margin-bottom: 20px; line-height: 140%"
+              >
+                <span style="font-weight: 600; font-size: 130%">SciScore:</span
+                >&nbsp;&nbsp;&nbsp;<a
+                  style="
+                    font-size: 125%;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    line-height: 140%;
+                  "
+                  target="_blank"
+                  >Project information</a
+                >
+                &nbsp;
+                <span style="font-weight: 300; font-size: 130%">|</span> &nbsp;
+                <a
+                  style="
+                    font-size: 125%;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    line-height: 140%;
+                  "
+                  target="_blank"
+                  >Author support</a
+                >
+              </div>
+              <div class="sciencecast-link" style="clear: both">
+                <span style="font-size: 115%">Powered by</span><br /><a
+                  target="_blank"
+                  ><img src="./assets/logo.png" width="120px"
+                /></a>
+              </div>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <div class="tabcontent nocontent" id="sect_blog_links">
+            <div class="tab-header">
+              <p class="tab-title">
+                <i class="icon-desktop"></i> Blog/Media Links
+              </p>
+              <p class="tab-description">
+                bioTome aims to inform readers about online discussion of this
+                preprint occurring elsewhere. The content at the links below is
+                not endorsed by either bioTome or the preprint's authors.
+              </p>
+            </div>
+          </div>
+          <div class="tabcontent nocontent" id="sect_videos">
+            <div class="tab-header">
+              <p class="tab-title"><i class="icon-film"></i> Video</p>
+              <p class="tab-description">
+                bioTome partners with conferences and institutions to display
+                recordings of talks and seminars related to preprints. These are
+                posted with the consent of the authors.
+              </p>
+            </div>
+            <div id="panel_video_hdr" class="csh_panel_hdr">Video:</div>
+            <div class="csh_panel_hdr_sub">
+              <i>There are no videos for this paper.</i>
+            </div>
+          </div>
+        </div>
+        <div class="csh_panelc-footer">
+          <div class="separator"></div>
+          <div class="hypothesis-link">
+            <span>Powered by</span><br /><a
+              target="_blank"
+              ><img src="./assets/hypothesis.png" width="120px"
+            /></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div id="follow-form">
+      <div class="follow-header">
+        <h2 class="follow-title">Follow this preprint</h2>
+        <a id="follow-close" class="follow-close">X</a>
+      </div>
+      <p class="follow-description">
+        You can now receive automatic notifications when a preprint is revised,
+        withdrawn, commented on, peer reviewed, or published in a journal.
+        Select the events you would like to follow below and click "Submit". To
+        see all of the preprints you are currently following, please go to the
+        <a
+          >bioTome Alerts Page</a
+        >.
+      </p>
+      <form id="highwire-alerts-email-login-form">
+        <div>Sign In to Follow this Preprint</div>
+        <div
+          class="form-item form-item-label-before form-type-textfield form-item-highwire-alerts-email"
+        >
+          <label for="edit-highwire-alerts-email"
+            >Email
+            <span class="form-required" title="This field is required."
+              >*</span
+            ></label
+          ><input
+            type="text"
+            id="edit-highwire-alerts-email"
+            name="highwire_alerts_email"
+            size="50"
+            maxlength="128"
+            class="form-text required"
+          />
+        </div>
+        <input
+          type="submit"
+          name="op"
+          value="Log in"
+          class="follow-submit"
+        /><input
+          type="hidden"
+          name="form_id"
+          value="highwire_alerts_email_login_form"
+        />
+        <div id="form-message"></div>
+      </form>
+    </div>
+    <div
+      class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front"
+      tabindex="-1"
+      role="dialog"
+      aria-describedby="ui-id-1"
+      style="display: none"
+      aria-labelledby="ui-id-2"
+    >
+      <div
+        class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"
+      >
+        <span id="ui-id-2" class="ui-dialog-title">Email this Article</span
+        ><button
+          class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+          role="button"
+          aria-disabled="false"
+          title="close"
+        >
+          <span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span
+          ><span class="ui-button-text">close</span>
+        </button>
+      </div>
+      <div
+        class="minipanel-dialog-link-mini ui-dialog-content ui-widget-content"
+        style=""
+        id="ui-id-1"
+      >
+        <div
+          class="panel-display panel-1col clearfix"
+          id="mini-panel-biorxiv_art_email"
+        >
+          <div class="panel-panel panel-col">
+            <div>
+              <div class="panel-pane pane-block pane-forward-form pane-forward">
+                <div class="pane-content">
+                  <form
+                    id="forward-form"
+                    accept-charset="UTF-8"
+                  >
+                    <div>
+                      <div
+                        id="edit-instructions"
+                        class="form-item form-item-label-before form-type-item"
+                      >
+                        <p>
+                          Thank you for your interest in spreading the word
+                          about bioTome.
+                        </p>
+                        <p>
+                          NOTE: Your email address is requested solely to
+                          identify you as the sender of this article.
+                        </p>
+                      </div>
+                      <div
+                        class="form-item form-item-label-before form-type-textfield form-item-email"
+                      >
+                        <label for="edit-email"
+                          >Your Email
+                          <span
+                            class="form-required"
+                            title="This field is required."
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="edit-email"
+                          name="email"
+                          value=""
+                          size="58"
+                          maxlength="256"
+                          class="form-text required"
+                        />
+                      </div>
+                      <div
+                        class="form-item form-item-label-before form-type-textfield form-item-name"
+                      >
+                        <label for="edit-name"
+                          >Your Name
+                          <span
+                            class="form-required"
+                            title="This field is required."
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="edit-name"
+                          name="name"
+                          value=""
+                          size="58"
+                          maxlength="256"
+                          class="form-text required"
+                        />
+                      </div>
+                      <div
+                        class="form-item form-item-label-before form-type-textarea form-item-recipients"
+                      >
+                        <label for="edit-recipients"
+                          >Send To
+                          <span
+                            class="form-required"
+                            title="This field is required."
+                            >*</span
+                          ></label
+                        >
+                        <div
+                          class="form-textarea-wrapper resizable textarea-processed resizable-textarea"
+                        >
+                          <textarea
+                            id="edit-recipients"
+                            name="recipients"
+                            cols="50"
+                            rows="5"
+                            class="form-textarea required"
+                          ></textarea>
+                          <div class="grippie"></div>
+                        </div>
+                        <div class="description">
+                          Enter multiple addresses on separate lines or separate
+                          them with commas.
+                        </div>
+                      </div>
+                      <div
+                        id="edit-page"
+                        class="form-item form-item-label-before form-type-item"
+                      >
+                        <label for="edit-page"
+                          >You are going to email the following
+                        </label>
+                        <a
+                          class="active"
+                          data-icon-position=""
+                          data-hide-link-title="0"
+                          >Allosteric Regulation of Hexokinase II by Citrate Under Hypoxic Conditions in Human Cells</a
+                        >
+                      </div>
+                      <div
+                        id="edit-subject"
+                        class="form-item form-item-label-before form-type-item"
+                      >
+                        <label for="edit-subject">Message Subject </label>
+                        (Your Name) has forwarded a page to you from bioTome
+                      </div>
+                      <div
+                        id="edit-body"
+                        class="form-item form-item-label-before form-type-item"
+                      >
+                        <label for="edit-body">Message Body </label>
+                        (Your Name) thought you would like to see this page from
+                        the bioTome website.
+                      </div>
+                      <div
+                        class="form-item form-item-label-before form-type-textarea form-item-message"
+                      >
+                        <label for="edit-message--2"
+                          >Your Personal Message
+                        </label>
+                        <div
+                          class="form-textarea-wrapper resizable textarea-processed resizable-textarea"
+                        >
+                          <textarea
+                            id="edit-message--2"
+                            name="message"
+                            cols="50"
+                            rows="10"
+                            class="form-textarea"
+                          ></textarea>
+                          <div class="grippie"></div>
+                        </div>
+                      </div>
+                      <input type="hidden" name="path" value="node/4436664" />
+                      <input type="hidden" name="path_cid" value="" />
+                      <input type="hidden" name="forward_footer" value=" " />
+                      <input
+                        type="hidden"
+                        name="form_build_id"
+                        value="form-rAYm3WHI-ol9x1c0MhrWtNGp9llgt6RVLxLeT8QSsGk"
+                      />
+                      <input
+                        type="hidden"
+                        name="form_id"
+                        value="forward_form"
+                      />
+                      <fieldset class="captcha form-wrapper">
+                        <legend>
+                          <span class="fieldset-legend">CAPTCHA</span>
+                        </legend>
+                        <div class="fieldset-wrapper">
+                          <div class="fieldset-description">
+                            This question is for testing whether or not you are
+                            a human visitor and to prevent automated spam
+                            submissions.
+                          </div>
+                          <input
+                            type="hidden"
+                            name="captcha_sid"
+                          />
+                          <input
+                            type="hidden"
+                            name="captcha_token"
+                          />
+                          <input
+                            type="hidden"
+                            name="captcha_response"
+                            value="Google no captcha"
+                          />
+                          <div
+                            class="g-recaptcha recaptcha-processed"
+                            data-theme="light"
+                            data-type="image"
+                          >
+                            <div style="width: 304px; height: 78px">
+                              <div>
+                              </div>
+                              <textarea
+                                id="g-recaptcha-response"
+                                name="g-recaptcha-response"
+                                class="g-recaptcha-response"
+                                style="
+                                  width: 250px;
+                                  height: 40px;
+                                  border: 1px solid rgb(193, 193, 193);
+                                  margin: 10px 25px;
+                                  padding: 0px;
+                                  resize: none;
+                                  display: none;
+                                "
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <div class="form-actions form-wrapper" id="edit-actions">
+                        <input
+                          type="submit"
+                          id="edit-submit"
+                          name="op"
+                          value="Send Message"
+                          class="form-submit"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front"
+      tabindex="-1"
+      role="dialog"
+      aria-describedby="ui-id-3"
+      style="display: none"
+      aria-labelledby="ui-id-4"
+    >
+      <div
+        class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"
+      >
+        <span id="ui-id-4" class="ui-dialog-title">Citation Tools</span
+        ><button
+          class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+          role="button"
+          aria-disabled="false"
+          title="close"
+        >
+          <span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span
+          ><span class="ui-button-text">close</span>
+        </button>
+      </div>
+      <div
+        class="minipanel-dialog-link-mini ui-dialog-content ui-widget-content"
+        style=""
+        id="ui-id-3"
+      >
+        <div
+          class="panel-display panel-1col clearfix"
+          id="mini-panel-biorxiv_cite_tool"
+        >
+          <div class="panel-panel panel-col">
+            <div>
+              <div class="panel-pane pane-highwire-citation-export">
+                <div class="pane-content">
+                  <div class="highwire-citation-export">
+                    <div class="highwire-citation-info">
+                      <div
+                        class="highwire-article-citation highwire-citation-type-highwire-article cite-tool-node4436664--5"
+                      >
+                        <div
+                          class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix"
+                        >
+                          <div class="highwire-cite-title">
+                            <div class="highwire-cite-title">
+                              Allosteric Regulation of Hexokinase II by Citrate Under Hypoxic Conditions in Human Cells
+                            </div>
+                          </div>
+
+                          <div class="highwire-cite-authors">
+                            <span class="highwire-citation-authors"
+                              >
+                              <span
+                                class="highwire-citation-author"
+                                data-delta="1"
+                                ><span class="nlm-given-names">Elena K.</span>
+                                <span class="nlm-surname">Vassilev</span></span
+                              >,
+                              <span
+                                class="highwire-citation-author"
+                                data-delta="2"
+                                ><span class="nlm-given-names">Marcus J.</span>
+                                <span class="nlm-surname">Renfield</span></span
+                              >,
+                              <span
+                                class="highwire-citation-author"
+                                data-delta="3"
+                                ><span class="nlm-given-names">Aisha T.</span>
+                                <span class="nlm-surname">Nakamura</span></span
+                              >
+                          </div>
+
+                          <div class="highwire-cite-metadata">
+                            <span
+                              class="highwire-cite-metadata-journal highwire-cite-metadata"
+                              >bioTome </span
+                            ><span
+                              class="highwire-cite-metadata-pages highwire-cite-metadata"
+                              >2025.05.07.111111; </span
+                            ><span
+                              class="highwire-cite-metadata-doi highwire-cite-metadata"
+                              ><span class="doi_label">doi:</span>
+                              https://doi.org/11.1111/2025.05.07.111111
+                            </span>
+                            <div
+                              class="pub_jnl"
+                              style="
+                                padding-top: 8px;
+                                font-size: 10pt;
+                                line-height: 1.3em;
+                                color: grey;
+                              "
+                            >
+                              This article is a preprint and has not been
+                              certified by peer review [<a
+                                target="_blank"
+                                style="color: black"
+                                >what does this mean?</a
+                              >].
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="highwire-citation-formats">
+                      <h2>Citation Manager Formats</h2>
+                      <div class="highwire-citation-formats-links">
+                        <span
+                          class="Z3988"
+                        ></span>
+                        <ul
+                          class="hw-citation-links inline button button-alt button-grid clearfix"
+                        >
+                          <li class="bibtext first">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >BibTeX</a
+                            >
+                          </li>
+                          <li class="bookends">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >Bookends</a
+                            >
+                          </li>
+                          <li class="easybib">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >EasyBib</a
+                            >
+                          </li>
+                          <li class="endnote-tagged">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >EndNote (tagged)</a
+                            >
+                          </li>
+                          <li class="endnote-8-xml">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >EndNote 8 (xml)</a
+                            >
+                          </li>
+                          <li class="medlars">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >Medlars</a
+                            >
+                          </li>
+                          <li class="mendeley">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >Mendeley</a
+                            >
+                          </li>
+                          <li class="papers">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >Papers</a
+                            >
+                          </li>
+                          <li class="refworks-tagged">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >RefWorks Tagged</a
+                            >
+                          </li>
+                          <li class="reference-manager">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >Ref Manager</a
+                            >
+                          </li>
+                          <li class="ris">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >RIS</a
+                            >
+                          </li>
+                          <li class="zotero last">
+                            <a
+                              class="hw-download-citation-link"
+                              data-icon-position=""
+                              data-hide-link-title="0"
+                              >Zotero</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cboxOverlay" style="display: none"></div>
+    <div
+      id="colorbox"
+      class=""
+      role="dialog"
+      tabindex="-1"
+      style="display: none"
+    >
+      <div id="cboxWrapper">
+        <div>
+          <div id="cboxTopLeft" style="float: left"></div>
+          <div id="cboxTopCenter" style="float: left"></div>
+          <div id="cboxTopRight" style="float: left"></div>
+        </div>
+        <div style="clear: left">
+          <div id="cboxMiddleLeft" style="float: left"></div>
+          <div id="cboxContent" style="float: left">
+            <div id="cboxTitle" style="float: left"></div>
+            <div id="cboxCurrent" style="float: left"></div>
+            <button type="button" id="cboxPrevious"></button
+            ><button type="button" id="cboxNext"></button
+            ><button id="cboxSlideshow"></button>
+            <div id="cboxLoadingOverlay" style="float: left"></div>
+            <div id="cboxLoadingGraphic" style="float: left"></div>
+          </div>
+          <div id="cboxMiddleRight" style="float: left"></div>
+        </div>
+        <div style="clear: left">
+          <div id="cboxBottomLeft" style="float: left"></div>
+          <div id="cboxBottomCenter" style="float: left"></div>
+          <div id="cboxBottomRight" style="float: left"></div>
+        </div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 9999px;
+          visibility: hidden;
+          display: none;
+          max-width: none;
+        "
+      ></div>
+    </div>
+    <div
+      style="
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+        position: absolute;
+        transition:
+          visibility linear 0.3s,
+          opacity 0.3s linear;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2000000000;
+        left: 0px;
+        top: -10000px;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.05;
+        "
+      ></div>
+      <div
+        class="g-recaptcha-bubble-arrow"
+        style="
+          border: 11px solid transparent;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -11px;
+          z-index: 2000000000;
+        "
+      ></div>
+      <div
+        class="g-recaptcha-bubble-arrow"
+        style="
+          border: 10px solid transparent;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -10px;
+          z-index: 2000000000;
+        "
+      ></div>
+      <div style="z-index: 2000000000; position: relative">
+      </div>
+    </div>
+  </body>
+</html>
