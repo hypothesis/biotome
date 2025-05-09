@@ -1,7 +1,26 @@
 bioTome
 =======
 
-A fictional demo site for the Hypothesis integration on https://www.biorxiv.org/.
+A fictional demo site for the Hypothesis integration on biorxiv.org. To view the demo site go to <https://hypothesis.github.io/biotome/>.
+
+Adding Hypothesis to a website
+------------------------------
+
+To embed Hypothesis into a site like in the demo linked above you just need to add a couple of scripts to your site's HTML:
+
+```html
+<script type="application/json" class="js-hypothesis-config">
+  {
+    "enableExperimentalNewNoteButton": true,
+    "externalContainerSelector": "#hypothesis"
+  }
+</script>
+<script async src="https://hypothes.is/embed.js"></script>
+```
+
+`externalContainerSelector` should be a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors) that selects the HTML element on your page where you want Hypothesis to appear.
+
+For documentation, including all the settings you can use in the `js-hypothesis-config` object, see: <https://h.readthedocs.io/projects/client/en/latest/publishers/embedding.html>.
 
 Setting up a local bioTome development environment
 --------------------------------------------------
