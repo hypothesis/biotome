@@ -14,8 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: |
-          bin/build.sh
+        run: bin/build.sh
         env:
           HYPOTHESIS_EMBED_URL: https://hypothes.is/embed.js
       - name: Configure GitHub Pages
