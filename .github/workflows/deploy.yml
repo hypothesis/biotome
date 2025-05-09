@@ -16,6 +16,8 @@ jobs:
       - name: Build
         run: |
           bin/build.sh
+        env:
+          HYPOTHESIS_EMBED_URL: https://hypothes.is/embed.js
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
