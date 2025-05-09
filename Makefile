@@ -6,4 +6,4 @@ help:
 .PHONY: dev
 dev: HYPOTHESIS_EMBED_URL := http://localhost:5000/embed.js
 dev:
-	find site | entr -r bin/run.sh
+	find src | entr -r bin/run.sh
