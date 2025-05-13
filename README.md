@@ -1,7 +1,7 @@
 bioTome
 =======
 
-A fictional demo site for the Hypothesis integration on biorxiv.org. To view the demo site go to <https://hypothesis.github.io/biotome/>.
+A fictional demo site for the Hypothesis integration on biorxiv.org. To view the demo site go to <https://biotome.hypothes.is/>.
 
 Adding Hypothesis to a website
 ------------------------------
