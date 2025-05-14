@@ -17,6 +17,9 @@ jobs:
         run: bin/build.sh
         env:
           HYPOTHESIS_EMBED_URL: https://hypothes.is/embed.js
+          HYPOTHESIS_API_URL: https://hypothes.is/api/
+          HYPOTHESIS_AUTHORITY: hypothes.is
+          HYPOTHESIS_GROUPS: '"Pi3Pmdmm", "6279Y8xA"'
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

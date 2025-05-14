@@ -4,7 +4,12 @@
   <script type="application/json" class="js-hypothesis-config">
     {
       "enableExperimentalNewNoteButton": true,
-      "externalContainerSelector": "#hypothesis"
+      "externalContainerSelector": "#hypothesis",
+      "services": [{
+        "apiUrl": "${HYPOTHESIS_API_URL}",
+        "authority": "${HYPOTHESIS_AUTHORITY}",
+        "groups": [${HYPOTHESIS_GROUPS}]
+      }]
     }
   </script>
   <script async src="${HYPOTHESIS_EMBED_URL}"></script>
