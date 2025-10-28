@@ -3,6 +3,8 @@
   <head>
   <script type="application/json" class="js-hypothesis-config">
     {
+      "commentsMode": true,
+      "showHighlights": false,
       "enableExperimentalNewNoteButton": true,
       "externalContainerSelector": "#hypothesis"
     }
@@ -1961,7 +1963,7 @@
           </div>
         </div>
         <div class="csh_panelc-body" style="height: 100%;">
-          <div class="tabcontent" id="sect_comments" style="height:100%;">
+          <div class="tabcontent" id="sect_comments" style="height:100%; display: flex; flex-direction: column">
             <div class="tab-header" id="sect_comments_header">
               <p class="tab-title"><i class="icon-comment-alt"></i> Comments</p>
               <p class="tab-description">
@@ -1983,8 +1985,7 @@
                 copy link)</a
               ><span class="comments-tab-share-message">Copied!</span>
             </div>
-            <div id="hypothesis" style="height:100%;">
-            </div>
+            <div id="hypothesis" style="height:100%;"></div>
           </div>
           <div class="tabcontent nocontent" id="sect_trip">
             <div class="tab-header">

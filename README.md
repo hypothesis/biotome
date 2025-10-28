@@ -11,6 +11,8 @@ To embed Hypothesis into a site like in the demo linked above you just need to a
 ```html
 <script type="application/json" class="js-hypothesis-config">
   {
+    "commentsMode": true,
+    "showHighlights": false,
     "enableExperimentalNewNoteButton": true,
     "externalContainerSelector": "#hypothesis"
   }
