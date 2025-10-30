@@ -14,6 +14,7 @@ To embed Hypothesis into a site like in the demo linked above you just need to a
     "commentsMode": true,
     "showHighlights": false,
     "enableExperimentalNewNoteButton": true,
+    "groupsAllowlist": ["group_one_id", "group_two_id"],
     "externalContainerSelector": "#hypothesis"
   }
 </script>
