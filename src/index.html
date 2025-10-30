@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <script type="application/json" class="js-hypothesis-config">
-    {
-      "commentsMode": true,
-      "showHighlights": false,
-      "enableExperimentalNewNoteButton": true,
-      "externalContainerSelector": "#hypothesis"
-    }
+  <script>
+    window.hypothesisConfig = function () {
+      return {
+        commentsMode: true,
+        showHighlights: false,
+        enableExperimentalNewNoteButton: true,
+        externalContainerSelector: '#hypothesis',
+        groupsAllowlist: '${HYPOTHESIS_GROUPS_ALLOWLIST}'.split(',')
+      };
+    };
   </script>
   <script async src="${HYPOTHESIS_EMBED_URL}"></script>
   <style>
