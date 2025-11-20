@@ -38,6 +38,13 @@
       function closeSidebar() {
         document.getElementById('csh_sidebar').classList.remove('activec');
       }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const { hash } = window.location;
+        if (hash.includes('annotations:')) {
+          openSidebar('comments');
+        }
+      });
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon" />
